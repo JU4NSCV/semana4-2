@@ -24,8 +24,7 @@ La instalación nativa permite ejecutar CouchDB como un servicio del sistema.
 ```bash
 sudo apt update && sudo apt install -y curl apt-transport-https gnupg
 ````
-
-
+![img](img/precou.png)
 
 #### 2. Configuración de llaves y repositorio oficial
 
@@ -36,6 +35,7 @@ Se añadió la llave GPG oficial de Apache CouchDB para garantizar la autenticid
 ```bash
 sudo apt install -y couchdb
 ```
+![img](img/instcou.png)
 
 #### 4. Configuración del asistente
 
@@ -43,8 +43,6 @@ Durante la instalación:
 
 * Se configuró el nodo como **standalone**.
 * Se definió el usuario administrador.
-
-📸 *Captura de pantalla sugerida*
 
 ---
 
@@ -63,6 +61,7 @@ docker run -d \
   -v ~/couchdb_data:/opt/couchdb/data \
   couchdb:latest
 ```
+![img](img/docycou.png)
 
 ### 📌 Verificación de contenedores
 
@@ -70,7 +69,7 @@ docker run -d \
 docker ps
 ```
 
-📸 *Captura de pantalla sugerida*
+![img](img/docs.png)
 
 ---
 
@@ -90,7 +89,7 @@ http://localhost:5984/_utils/
 * Inserción de documentos JSON.
 * Verificación del estado del nodo.
 
-📸 *Captura de pantalla sugerida*
+![img](img/cou.png)
 
 ---
 
@@ -120,8 +119,7 @@ curl http://admin:tu_password@127.0.0.1:5984/
   }
 }
 ```
-
----
+![img](img/cou1.png)
 
 ## 📝 Notas de Hardware (ThinkPad / Dual Boot)
 
