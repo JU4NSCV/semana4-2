@@ -1,6 +1,4 @@
-Aquí lo tienes **limpio, sin etiquetas extra ni IDs**, listo para copiar y pegar directamente en tu README 👇
 
-````markdown
 # 🚀 Instalación y Configuración de CouchDB en Ubuntu
 
 Este repositorio contiene la documentación y guía paso a paso para la instalación de **Apache CouchDB** en un entorno Ubuntu (probado en Lenovo ThinkPad), cubriendo tanto la instalación tradicional como el despliegue mediante Docker.
@@ -26,6 +24,8 @@ La instalación nativa permite ejecutar CouchDB como un servicio del sistema.
 ```bash
 sudo apt update && sudo apt install -y curl apt-transport-https gnupg
 ````
+
+
 
 #### 2. Configuración de llaves y repositorio oficial
 
