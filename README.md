@@ -1,7 +1,7 @@
 
 # 🚀 Instalación y Configuración de CouchDB en Ubuntu
 
-Este repositorio contiene la documentación y guía paso a paso para la instalación de **Apache CouchDB** en un entorno Ubuntu (probado en Lenovo ThinkPad), cubriendo tanto la instalación tradicional como el despliegue mediante Docker.
+Este repositorio contiene la documentación y guía paso a paso para la instalación de **Apache CouchDB** en un entorno Ubuntu, cubriendo tanto la instalación tradicional como el despliegue mediante Docker.
 
 ---
 
@@ -9,7 +9,7 @@ Este repositorio contiene la documentación y guía paso a paso para la instalac
 
 - Sistema Operativo: Ubuntu 22.04 LTS o superior.
 - Usuario con privilegios `sudo`.
-- Docker instalado (para el método de contenedores).
+- Docker instalado.
 - Conexión a internet.
 
 ---
@@ -42,7 +42,7 @@ sudo apt install -y couchdb
 Durante la instalación:
 
 * Se configuró el nodo como **standalone**.
-* Se definió el usuario administrador.
+* Se definió el usuario admin.
 
 ---
 
@@ -83,12 +83,6 @@ CouchDB incluye una interfaz gráfica de administración llamada **Fauxton**.
 http://localhost:5984/_utils/
 ```
 
-### ✅ Funcionalidades probadas:
-
-* Creación de bases de datos.
-* Inserción de documentos JSON.
-* Verificación del estado del nodo.
-
 ![img](img/cou.png)
 
 ---
@@ -98,7 +92,7 @@ http://localhost:5984/_utils/
 Se verificó el acceso mediante la línea de comandos para asegurar que la API HTTP responde correctamente:
 
 ```bash
-curl http://admin:tu_password@127.0.0.1:5984/
+curl http://admin:password@127.0.0.1:5984/
 ```
 
 ### 📌 Resultado esperado:
@@ -120,12 +114,5 @@ curl http://admin:tu_password@127.0.0.1:5984/
 }
 ```
 ![img](img/cou1.png)
-
-## 📝 Notas de Hardware (ThinkPad / Dual Boot)
-
-Durante este proceso se realizaron ajustes en la BIOS de la Lenovo ThinkPad para permitir el arranque de Ubuntu sin conflictos con BitLocker de Windows:
-
-* Desactivación de **Secure Boot** o registro de llaves MOK.
-* Cambio de modo de almacenamiento a **AHCI** (si aplica).
 
 ---
